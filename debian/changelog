@@ -1,3 +1,9 @@
+armitage (041013-1kali0) kali; urgency=low
+
+  * Imported new upstream release
+
+ -- Devon Kearns <dookie@kali.org>  Thu, 11 Apr 2013 16:45:02 -0600
+
 armitage (030613-1kali0) kali; urgency=low
 
   * Initial release 
