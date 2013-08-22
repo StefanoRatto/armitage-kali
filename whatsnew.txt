@@ -1,6 +1,66 @@
 Armitage Changelog
 ==================
 
+21 Jun 13 (tested against msf git revision: 0af2f1c611)
+---------
+- Removed sunrpc and dcerpc modules from MSF Scans feature
+- Fixed a potential deadlock when updating the host display
+- Updated multiplexing code to be compatible with enumdesktops command
+- Updated multiplexing code to be compatible with webcam_list command
+- You may now choose which camera to take a Webcam Shot from
+- Close button now shows w/ Armitage dialogs on Kali Linux.
+- Module Launcher dialog is now always active when opened.
+- EXE::Custom is no longer treated as an advanced option. When available
+  it's always present for you to modify in a module.
+- Meterpreter -> Access -> Persistence now uses the local exploit module
+  (default settings now work without tweaks too)
+- Meterpreter -> Access -> Pass Session and Process -> Inject now use the
+  payload_inject local exploit module.
+- Added Meterpreter -> Access -> Dump Hashes -> wdigest to run mimikatz's
+  wdigest command, to retrieve plaintext creds.
+- Armitage now uses a better method to shuttle files to team server and
+  notify you of the progress of this action.
+- Made multiplexing code smarter about load and use commands.
+- Added a check to detect commercial MSF modules in the module cache and 
+  to automatically clear it. When this happens you will need to restart the
+  Metasploit Framework. A corrupt cache causes some RPC calls to throw 
+  errors as plain msfrpcd is not allowed to interact with commercial modules.
+- Added ANSI color markup to armitage's console output. It's less scary 
+  than the default messages and it's nicer to look at.
+- Added cmd/unix/reverse to payload selection logic.
+- Updated the payload output formats to match what's now possible in MSF
+- Armitage -> Listeners actions now show commands/output in a tab
+- [host] -> Login options now set DB_ALL_CREDS to false. Making this option
+  default to true is not the decision I would have made.
+
+6 Jun 13 (tested against msf git revision: c705928052)
+--------
+- Attacks -> Hail Mary now asks you to confirm the action.
+- Fixed a potential table sorting issue
+- Changed how some tables are updated to minimize blocking of other
+  tasks. This should make UI feel snappier in many cases.
+- Credential helper now shows credentials from all servers you're
+  connected to.
+- Updated multiplexing code to be compatible with mimikatz extension's
+  output scheme.
+- Meterpreter upload command (with no arguments) now prompts for a file.
+  This file will be bounced to team server (if one is present) and 
+  uploaded to the target for you.
+- Cred tables no longer show SSH keys
+- Added vmauthd to the Login menu
+- Increased the number of modules run in response to services found during
+  a sweep with the MSF Scans feature.
+- Attack menu attached to host now splits menus up if there are more than
+  10 items. This will help with the webapp and http menus.
+- Added a menu to mark a host as a firewall
+- Added a type-fix hack for MsgPack Long types
+
+Cortana Updates (for scripters)
+--------
+- Updated &log_resource to account for new log folder layout scheme that
+  involves a description of the current Armitage server
+- Fixed a potential argument corruption bug with filters
+
 10 Apr 13 (tested against msf ca43900a7)
 ---------
 - Jobs dialog now queries job info in a separate thread context, 
