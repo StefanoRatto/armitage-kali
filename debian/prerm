@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mv /usr/share/armitage/armitage.store /tmp/ 2> /dev/null
+
