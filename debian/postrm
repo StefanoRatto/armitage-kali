@@ -1,4 +1,6 @@
 #!/bin/bash
 
-mv /usr/share/armitage/armitage.store /tmp/ 2> /dev/null
-
+if [ -f /usr/share/armitage/armitage.store ]
+  then
+    mv /usr/share/armitage/armitage.store /tmp/
+fi
