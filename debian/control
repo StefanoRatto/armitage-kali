@@ -9,7 +9,7 @@ Vcs-Git: git://git.kali.org/packages/armitage.git
 Vcs-Browser: http://git.kali.org/gitweb/?p=packages/armitage.git;a=summary
 
 Package: armitage
-Architecture: i386 amd64
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, default-jre, metasploit
 Description: Cyber attack management for Metasploit
  Armitage is a scriptable red team collaboration tool for Metasploit that 

@@ -1,6 +1,6 @@
 armitage (20130821-1kali1) kali; urgency=low
 
-  * Added a helper script for teamserver
+  * Added a helper script for teamserver and added post files to retain data
 
  -- Devon Kearns <dookie@kali.org>  Fri, 23 Aug 2013 08:07:44 -0600
 
