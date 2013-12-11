@@ -1,0 +1,22 @@
+#!/bin/bash
+
+ARCH=`uname -r|cut -d "-" -f 3`
+
+if [ $ARCH == 686 ]
+then
+	JAVA_ARCH="i386"
+	cd /usr/share/armitage/ && export PATH=/usr/lib/jvm/java-7-openjdk-i386/bin:$PATH && ./armitage "$@"
+
+elif [ $ARCH == 486 ]
+then
+        JAVA_ARCH="i386"
+        cd /usr/share/armitage/ && export PATH=/usr/lib/jvm/java-7-openjdk-i386/bin:$PATH && ./armitage "$@"
+
+elif [ $ARCH == amd64 ]
+then
+	JAVA_ARCH="amd64"
+	cd /usr/share/armitage/ && export PATH=/usr/lib/jvm/java-7-openjdk-amd64/bin:$PATH && ./armitage "$@"
+
+else
+	cd /usr/share/armitage/ && export PATH=/usr/lib/jvm/java-7-openjdk-arm*/bin:$$PATH && ./armitage "$@"
+fi

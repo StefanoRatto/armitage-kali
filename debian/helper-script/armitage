@@ -1,22 +1,19 @@
 #!/bin/bash
 
-ARCH=`uname -r|cut -d "-" -f 3`
+ARCH=`uname -m`
 
-if [ $ARCH == 686 ]
-then
-	JAVA_ARCH="i386"
-	cd /usr/share/armitage/ && export PATH=/usr/lib/jvm/java-7-openjdk-i386/bin:$PATH && ./armitage "$@"
+case $ARCH in
+	i686)	JAVA_ARCH="i386";
+		export PATH=/usr/lib/jvm/java-7-openjdk-i386/bin:$PATH	;;
 
-elif [ $ARCH == 486 ]
-then
-        JAVA_ARCH="i386"
-        cd /usr/share/armitage/ && export PATH=/usr/lib/jvm/java-7-openjdk-i386/bin:$PATH && ./armitage "$@"
+	x86_64)	JAVA_ARCH="amd64";
+		export PATH=/usr/lib/jvm/java-7-openjdk-amd64/bin:$PATH	;;
 
-elif [ $ARCH == amd64 ]
-then
-	JAVA_ARCH="amd64"
-	cd /usr/share/armitage/ && export PATH=/usr/lib/jvm/java-7-openjdk-amd64/bin:$PATH && ./armitage "$@"
+	armv6l)	export PATH=/usr/lib/jvm/java-7-openjdk-arm*/bin:$PATH	;;
 
-else
-	cd /usr/share/armitage/ && export PATH=/usr/lib/jvm/java-7-openjdk-arm*/bin:$$PATH && ./armitage "$@"
-fi
+	*)	echo "unknown architecture";	exit 1;;
+esac
+
+cd /usr/share/armitage/ && ./armitage "$@"
+
+exit $?
