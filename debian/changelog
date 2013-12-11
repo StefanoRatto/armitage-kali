@@ -1,3 +1,9 @@
+armitage (20131121-1kali0) kali; urgency=low
+
+  * Imported new upstream release (Closes: 0000764)
+
+ -- Devon Kearns <dookie@kali.org>  Wed, 11 Dec 2013 07:39:33 -0700
+
 armitage (20130821-1kali2) kali; urgency=low
 
   * Updated the helper script to use java 1.7 (Closes: 0000640)
