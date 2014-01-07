@@ -1,3 +1,9 @@
+armitage (20131121-1kali1) kali; urgency=low
+
+  * Added watch file (Closes: 0000851)
+
+ -- Devon Kearns <dookie@kali.org>  Tue, 07 Jan 2014 15:53:48 -0700
+
 armitage (20131121-1kali0) kali; urgency=low
 
   * Imported new upstream release (Closes: 0000764)
