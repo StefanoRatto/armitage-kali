@@ -9,7 +9,7 @@ case $ARCH in
 	x86_64)	JAVA_ARCH="amd64";
 		export PATH=/usr/lib/jvm/java-7-openjdk-amd64/bin:$PATH	;;
 
-	armv6l)	export PATH=/usr/lib/jvm/java-7-openjdk-arm*/bin:$PATH	;;
+	arm*)	export PATH=/usr/lib/jvm/java-7-openjdk-arm*/bin:$PATH	;;
 
 	*)	echo "unknown architecture";	exit 1;;
 esac

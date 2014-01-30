@@ -1,3 +1,9 @@
+armitage (20131121-1kali12) kali; urgency=low
+
+  * Fixed helper script for ARM
+
+ -- Devon Kearns <dookie@kali.org>  Thu, 30 Jan 2014 08:47:17 -0700
+
 armitage (20131121-1kali1) kali; urgency=low
 
   * Added watch file (Closes: 0000851)
