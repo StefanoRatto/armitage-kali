@@ -1,3 +1,9 @@
+armitage (20140227-0kali1) kali; urgency=low
+
+  * Imported new upstream release (Closes: 0001068)
+
+ -- Devon Kearns <dookie@kali.org>  Fri, 28 Feb 2014 11:24:51 -0700
+
 armitage (20131121-1kali12) kali; urgency=low
 
   * Fixed helper script for ARM
