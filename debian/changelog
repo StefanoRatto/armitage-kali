@@ -1,3 +1,9 @@
+armitage (20140818-0kali2) kali; urgency=medium
+
+  * Added lintian overrides
+
+ -- Devon Kearns <dookie@kali.org>  Mon, 18 Aug 2014 13:19:10 -0600
+
 armitage (20140818-0kali1) kali; urgency=low
 
   * Imported new upstream release
