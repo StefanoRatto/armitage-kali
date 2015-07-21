@@ -1,3 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
-cd /usr/share/armitage/ && ./teamserver "$@"
+cd /usr/share/armitage/
+exec ./teamserver "$@"

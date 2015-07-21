@@ -1,19 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
-ARCH=`uname -m`
-
-case $ARCH in
-	i686)	JAVA_ARCH="i386";
-		export PATH=/usr/lib/jvm/java-7-openjdk-i386/bin:$PATH	;;
-
-	x86_64)	JAVA_ARCH="amd64";
-		export PATH=/usr/lib/jvm/java-7-openjdk-amd64/bin:$PATH	;;
-
-	arm*)	export PATH=/usr/lib/jvm/java-7-openjdk-arm*/bin:$PATH	;;
-
-	*)	echo "unknown architecture";	exit 1;;
-esac
-
-cd /usr/share/armitage/ && ./armitage "$@"
-
-exit $?
+cd /usr/share/armitage/
+exec ./armitage "$@"

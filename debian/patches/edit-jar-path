@@ -1,6 +1,0 @@
-Changed the path in armitage to load the .jar file from /usr/share/armitage/
---- a/armitage
-+++ b/armitage
-@@ -1 +1 @@
--java -jar armitage.jar $*
-+java -jar /usr/share/armitage/armitage.jar $*

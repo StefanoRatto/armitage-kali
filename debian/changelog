@@ -1,3 +1,14 @@
+armitage (20141120-0kali1) kali-dev; urgency=medium
+
+  * Replace metasploit dependency by metasploit-framework.
+  * Fix watch file.
+  * Clean up packaging:
+    - switch to debhelper compat 9
+    - drop useless files
+    - simplify helper scripts
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Tue, 21 Jul 2015 14:39:25 +0200
+
 armitage (20141120-0kali0) kali; urgency=medium
 
   * Imported new upstream release (Closes: 0001874)
