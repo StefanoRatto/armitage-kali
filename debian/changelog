@@ -1,3 +1,9 @@
+armitage (20150812-1kali1) kali-dev; urgency=low
+
+  * Upstream update, fixes #2494
+
+ -- Mati Aharoni <muts@kali.org>  Wed, 12 Aug 2015 20:53:18 -0400
+
 armitage (20141120-0kali1) kali-dev; urgency=medium
 
   * Replace metasploit dependency by metasploit-framework.
