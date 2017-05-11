@@ -1,3 +1,9 @@
+armitage (20150812-1kali2) kali-dev; urgency=medium
+
+  * Add a patch to be compatible with update of openjdk (see bug 4006)
+
+ -- Sophie Brun <sophie@freexian.com>  Thu, 11 May 2017 09:48:51 +0200
+
 armitage (20150812-1kali1) kali-dev; urgency=low
 
   * Upstream update, fixes #2494
