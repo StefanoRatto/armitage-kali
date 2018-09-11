@@ -1,6 +1,9 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: armitage
 Source: http://www.fastandeasyhacking.com/
+Files-excluded: release/*
+Comment: release directory contains pre-compiled .jar for unix and
+ windows. We don't need these files.
 
 Files: *
 Copyright: 2010-2013 Strategic Cyber LLC
