@@ -6,8 +6,8 @@ Uploaders: Devon Kearns <dookie@kali.org>
 Build-Depends: debhelper (>= 11), ant, javahelper, default-jdk
 Standards-Version: 4.2.1
 Homepage: http://www.fastandeasyhacking.com/
-Vcs-Git: git://git.kali.org/packages/armitage.git
-Vcs-Browser: http://git.kali.org/gitweb/?p=packages/armitage.git;a=summary
+Vcs-Git: https://gitlab.com/kalilinux/packages/armitage.git
+Vcs-Browser: https://gitlab.com/kalilinux/packages/armitage
 
 Package: armitage
 Architecture: all
