@@ -3,7 +3,7 @@ Section: utils
 Priority: optional
 Maintainer: Kali Developers <devel@kali.org>
 Uploaders: Devon Kearns <dookie@kali.org>
-Build-Depends: debhelper (>= 11), ant, javahelper, default-jdk
+Build-Depends: debhelper (>= 12~), ant, javahelper, default-jdk
 Standards-Version: 4.2.1
 Homepage: http://www.fastandeasyhacking.com/
 Vcs-Git: https://gitlab.com/kalilinux/packages/armitage.git
