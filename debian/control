@@ -13,6 +13,6 @@ Package: armitage
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, default-jre, metasploit-framework
 Description: Cyber attack management for Metasploit
- Armitage is a scriptable red team collaboration tool for Metasploit that 
+ Armitage is a scriptable red team collaboration tool for Metasploit that
  visualizes targets, recommends exploits, and exposes the advanced post-
  exploitation features in the framework.
