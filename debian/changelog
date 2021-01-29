@@ -1,3 +1,15 @@
+armitage (20160709+ds1-0kali2) kali-dev; urgency=medium
+
+  [ Kali Janitor ]
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+
+  [ Raphaël Hertzog ]
+  * Fix watch file
+
+ -- Sophie Brun <sophie@offensive-security.com>  Fri, 29 Jan 2021 15:54:11 +0100
+
 armitage (20160709+ds1-0kali1) kali-dev; urgency=medium
 
   * Import new snapshot from Git
